@@ -27,11 +27,11 @@
 #X text 584 284 WARNING: oscparse removes the / from the address;
 #X text 68 164 WARNING: oscfornat automatically prefixes / to the address;
 #X text 64 5 This patcher was created by Thomas O Fredericks on 2023-02-19.;
-#X msg 222 333 connect localhost 8001;
 #X obj 541 92 netreceive -u -b 8001;
+#X msg 222 333 connect localhost 8000;
 #X connect 4 0 6 0;
 #X connect 5 0 4 1;
-#X connect 8 0 28 0;
+#X connect 8 0 29 0;
 #X connect 9 0 11 0;
 #X connect 12 0 14 0;
 #X connect 14 0 4 0;
@@ -45,6 +45,6 @@
 #X connect 22 2 19 0;
 #X connect 23 0 15 0;
 #X connect 24 0 15 0;
-#X connect 28 0 11 0;
-#X connect 29 0 3 0;
-#X connect 29 0 12 0;
+#X connect 28 0 3 0;
+#X connect 28 0 12 0;
+#X connect 29 0 11 0;
